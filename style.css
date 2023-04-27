@@ -4,7 +4,7 @@
     border: medium none;
     border-spacing: 0;
     color: #26589F;
-    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Bruno Ace SC', cursive;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.42rem;
@@ -88,7 +88,6 @@ body {
     background-color: black;
     color: white;
     border-radius: 0px;
-    font-family: 'Bruno Ace SC', cursive;
 }
 
 table {
@@ -102,7 +101,6 @@ td {
     border: 1px solid black;
     text-align: center;
     font-size: 40px;
-    font-family: 'Bruno Ace SC', cursive;
 }
 @media (max-width:1260px) {
     .container {
