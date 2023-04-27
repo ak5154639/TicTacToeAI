@@ -33,11 +33,13 @@ body {
     align-items: center;
 }
 
-.game{
+
+.game {
     justify-content: space-around;
     width: 50%;
-    height: 50vh;
-    background-color: rgba(245,222,179,0.9);
+    height: auto;
+    padding: 10px;
+    background-color: rgba(245, 222, 179, 0.9);
     box-shadow: -2px -3px grey;
     border-radius: 5px;
     margin: 2rem auto;
@@ -52,7 +54,6 @@ body {
     text-align: center;
     font-size: 35px;
 }
-
 .button:hover {
     background-color: grey;
     translate: -5px -5px;
@@ -73,14 +74,14 @@ body {
     height: 100px;
     padding-top: 35px;
 }
-.user{
+.user {
     font-size: 25px;
     padding: 10px;
     height: 50px;
     border: none;
     margin: 5px auto;
 }
-.status{
+.status {
     font-size: 15px;
     height: auto;
     width: 100%;
@@ -94,11 +95,66 @@ table {
     border-collapse: collapse;
     margin: auto;
 }
+
 td {
     width: 100px;
     height: 100px;
     border: 1px solid black;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     font-family: 'Bruno Ace SC', cursive;
+}
+@media (max-width:1260px) {
+    .container {
+        width: 90%;
+    }
+    .heading{
+        width: 90%;
+        font-size: 35px;
+    }
+    .game{
+        width: 90%;
+    }
+    .button{
+        font-size: 25px;
+    }
+    .user{
+        font-size: 25px;
+    }
+    .status{
+        font-size: 20px;
+        width: 100%;
+    }
+    td{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+    .heading{
+        width: 90%;
+        font-size: 25px;
+    }
+    .game{
+        width: 90%;
+    }
+    .button{
+        font-size: 15px;
+    }
+    .user{
+        font-size: 15px;
+    }
+    .status{
+        font-size: 13px;
+        width: 100%;
+    }
+    td{
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+    }
 }

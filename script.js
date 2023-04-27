@@ -208,7 +208,7 @@ async function selectedPlayer(usr){
         var j=Math.floor(Math.random()*3);
         
         
-        board=result(board,[2,2]);
+        board=result(board,[i,j]);
         console.log(board);
         ai_turn=false;
         document.getElementById("status").innerHTML="Your Turn";
