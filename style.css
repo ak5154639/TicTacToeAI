@@ -87,6 +87,7 @@ body {
     background-color: black;
     color: white;
     border-radius: 0px;
+    font-family: 'Bruno Ace SC', cursive;
 }
 
 table {
@@ -99,4 +100,5 @@ td {
     border: 1px solid black;
     text-align: center;
     font-size: 24px;
+    font-family: 'Bruno Ace SC', cursive;
 }
