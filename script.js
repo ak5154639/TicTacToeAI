@@ -211,6 +211,7 @@ async function selectedPlayer(usr){
         board=result(board,[2,2]);
         console.log(board);
         ai_turn=false;
+        document.getElementById("status").innerHTML="Your Turn";
         document.getElementById("board").style.pointerEvents="auto";
         updateBoard();
     }
