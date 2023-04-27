@@ -227,6 +227,7 @@ function over(){
     }else{
         document.getElementById("status").innerHTML="AI Won!!";
     }
+    document.getElementById("status").innerHTML=document.getElementById("status").innerHTML+"<br>Please Refresh to play again!!";
 }
 
 async function clicked(location){
