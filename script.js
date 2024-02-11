@@ -157,7 +157,7 @@ function minValue(board){
 
 function minimax(board){
     if(terminal(board) == false){
-        console.log(player(board));
+        // console.log(player(board));
         if (player(board) == X){
             return maxValue(board)[1];
         }else{
@@ -209,7 +209,7 @@ async function selectedPlayer(usr){
         
         
         board=result(board,[i,j]);
-        console.log(board);
+        // console.log(board);
         ai_turn=false;
         document.getElementById("status").innerHTML="Your Turn";
         document.getElementById("board").style.pointerEvents="auto";
@@ -219,7 +219,7 @@ async function selectedPlayer(usr){
 }
 var game_over=false;
 function over(){
-    console.log("player is ",winner(board))
+    // console.log("player is ",winner(board))
     if (winner(board)==user){
         document.getElementById("status").innerHTML="Your Won";
     }else if (winner(board)==null){
@@ -227,7 +227,8 @@ function over(){
     }else{
         document.getElementById("status").innerHTML="AI Won!!";
     }
-    document.getElementById("status").innerHTML=document.getElementById("status").innerHTML+"<br>Please Refresh to play again!!";
+    document.getElementById("status").innerHTML = document.getElementById("status").innerHTML+"<br>Please click here to play again!!";
+    document.getElementById("status").style.cursor = "pointer";
 }
 
 async function clicked(location){
@@ -243,7 +244,7 @@ async function clicked(location){
             document.getElementById(location[0]+""+location[1]).style.pointerEvents="none";
             await delay(500);
             var move=minimax(board);
-            console.log("AI Moved at ",move);
+            // console.log("AI Moved at ",move);
             board=result(board,move);
             ai_turn=false;
             document.getElementById("status").innerHTML="Your Turn";
@@ -261,3 +262,8 @@ async function clicked(location){
     }
 }
 
+document.getElementById("status").addEventListener('click', ()=>{
+    if (terminal(board)){
+        window.location.reload();
+    }
+})
